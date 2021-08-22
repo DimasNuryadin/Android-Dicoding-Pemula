@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Proyek Akhir</string>
+    <string name="nama_preset">Nama Preset</string>
+    <string name="detail">Detail</string>
+    <string name="dimasnuryadinn_gmail_com">dimasnuryadinn@gmail.com</string>
+    <string name="dimas_nuryadin">Dimas Nuryadin</string>
+    <string name="share">Share</string>
+    <string name="favorite">Favorite</string>
+    <string name="rp_30_000">Rp. 30.000</string>
+    <string name="total_price">(Total Price)</string>
+    <string name="terimakasih">Terimakasih telah membeli preset kami. Kami telah mengirimkan file melalui email. Mohon cek kembali Email anda.</string>
+</resources>

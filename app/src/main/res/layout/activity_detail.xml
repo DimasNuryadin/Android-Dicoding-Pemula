@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_detail"
+    tools:context=".DetailActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_photo"
+        android:layout_width="190dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="21dp"
+        app:cardCornerRadius="20dp">
+
+        <!-- ScaleType untuk memotong gambar -->
+        <ImageView
+            android:id="@+id/img_item_photo"
+            android:src="@drawable/orange_teal"
+            android:scaleType="centerCrop"
+            android:layout_width="190dp"
+            android:layout_height="280dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:textColor="@color/warna_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="6dp"
+        android:layout_toEndOf="@+id/card_photo"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/nama_preset"/>
+
+    <TextView
+        android:id="@+id/tv_item_detail"
+        android:textColor="@color/warna_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="6dp"
+        android:layout_toEndOf="@+id/card_photo"
+        android:layout_below="@+id/tv_item_name"
+        android:textSize="16sp"
+        android:text="@string/detail"/>
+
+    <Button
+        android:id="@+id/btn_favorite"
+        android:layout_width="116dp"
+        android:layout_height="46dp"
+        android:text="@string/favorite"
+        android:textSize="14sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="194dp"
+        android:layout_below="@+id/tv_item_name"
+        android:layout_toEndOf="@+id/card_photo"/>
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="116dp"
+        android:layout_height="46dp"
+        android:text="@string/share"
+        android:textSize="14sp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="194dp"
+        android:layout_below="@+id/tv_item_name"
+        android:layout_toEndOf="@+id/btn_favorite"/>
+
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:textColor="@color/warna_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/card_photo"
+        android:textSize="16sp"
+        android:text="Preset ini telah dibuat dengan hati-hati oleh ahli lightroom profesional yang kreatif sehingga akan terlihat bagus dengan berbagai jenis merek foto dan kamera"/>
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:textColor="@color/warna_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/tv_1"
+        android:textSize="16sp"
+        android:text="Setiap preset juga dapat diedit penuh sehingga anda dapat menyempurnakan foto."/>
+
+    <TextView
+        android:id="@+id/tv_3"
+        android:textColor="@color/warna_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/tv_2"
+        android:textSize="16sp"
+        android:text="Preset ini bekerja dengan cara non-destruktif untuk mendapatkan tampilan berkualitas tinggi"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/orange_2">
+
+        <TextView
+            android:id="@+id/tv_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rp_30_000"
+            android:textSize="18sp"
+            android:textColor="@color/warna_text"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_price"
+            android:textSize="14sp"
+            android:textColor="@color/warna_text"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/tv_4"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:id="@+id/btn_beli"
+            android:layout_width="128dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp"
+            android:text="Beli" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
